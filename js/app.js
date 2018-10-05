@@ -34,9 +34,6 @@ Enemy.prototype.update = function(dt) {
 		this.x < (player.x + player.width)) {
 		player.reset();
 	}
-
-
-	// console.log('Bug y: ' + this.y); // 60 140 220
 };
 
 // Draw the enemy on the screen, required method for game
@@ -57,14 +54,19 @@ var Player = function(x, y) {
 
 Player.prototype.render = function() {
 	ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+	var self = this;
+
+	if (this.y < 0) {
+		ctx.font = '30px Arial';
+		ctx.fillText('You Win!', 130, 40);
+		setTimeout(function() {
+			// reset player to bottom of screen
+			self.reset();
+		}, 1000);
+	}
 }
 
-Player.prototype.update = function(dt) {
-	// player made it to the top and won
-	if (this.y < 50) {
-		this.x = 200;
-		this.y = 370;
-	}
+Player.prototype.update = function() {
 };
 
 Player.prototype.handleInput = function(keyCode) {
