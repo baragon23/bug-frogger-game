@@ -8,3 +8,6 @@ The player will use the arrow keys on the keyboard to control the character.
 1. The player can move left, right, up and down
 2. Vehicles cross the screen
 3. Vehicle-player collisions happen logically (not too early or too late)
+
+## Code
+The game makes use of the Canvas feature of Javascript and various classes and prototypes.
