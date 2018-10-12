@@ -1,6 +1,9 @@
 # bug-frogger-game
 In this game you have a Player and Enemies (bugs). The goal of the player is to reach the water, without colliding into any one of the enemies.
 
+## Installation
+Download or clone the repository and then open up the index.html file in a web browser.
+
 ## Controls
 The player will use the arrow keys on the keyboard to control the character.
 
@@ -11,3 +14,4 @@ The player will use the arrow keys on the keyboard to control the character.
 
 ## Code
 The game makes use of the Canvas feature of Javascript and various classes and prototypes.
+
