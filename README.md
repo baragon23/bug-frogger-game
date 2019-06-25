@@ -1,6 +1,9 @@
 # bug-frogger-game
 In this game you have a Player and Enemies (bugs). The goal of the player is to reach the water, without colliding into any one of the enemies.
 
+## Demo
+https://baragon23.github.io/bug-frogger-game/
+
 ## Installation
 Download or clone the repository and then open up the index.html file in a web browser.
 
